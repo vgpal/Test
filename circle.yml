@@ -10,7 +10,6 @@ test:
   post:
     - cf api https://api.ng.bluemix.net
     - cf auth sid.athena@gmail.com vjil@123
-    - cf target -o Test -s dev
     - cf a
 deployment:
   staging:
