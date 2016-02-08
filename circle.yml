@@ -10,7 +10,7 @@ test:
   post:
     - cf api https://api.au-syd.bluemix.net
     - cf auth sid.athena@gmail.com vjil@123
-    - cf target -o sid.athena@gmail.com -s YmlTest
+    - cf target -o sid.athena@gmail.com -s dev/YmlTest
     - cf a
 deployment:
   staging:
