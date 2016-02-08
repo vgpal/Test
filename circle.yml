@@ -8,9 +8,9 @@ test:
     - ./test.sh 
 test:
   post:
-    - cf api https://api.ng.bluemix.net
+    - cf api https://api.au-syd.bluemix.net
     - cf auth sid.athena@gmail.com vjil@123
-    - cf target -o sid.athena@gmail.com -s dev
+    - cf target -u sid.athena@gmail.com -o sid.athena@gmail.com -s dev
     - cf a
 deployment:
   staging:
