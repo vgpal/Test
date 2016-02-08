@@ -1,5 +1,5 @@
 applications:
-- path: JavaHelloWorldApp.war
+- path: Spring3Example-1.0-SNAPSHOT.jar
   memory: 512M
   instances: 1
   domain: au-syd.mybluemix.net
