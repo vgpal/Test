@@ -3,14 +3,12 @@ dependencies:
     - curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
     - sudo dpkg -i cf-cli_amd64.deb
     - cf -v
-test:
-  override:
-    - ./test.sh 
+  
 test:
   post:
     - cf api https://api.au-syd.bluemix.net
     - cf auth sid.athena@gmail.com vjil@123
-    - cf target -o sid.athena@gmail.com -s dev/YmlTest
+    - cf target -o sid.athena@gmail.com -s dev
     - cf a
 deployment:
   staging:
